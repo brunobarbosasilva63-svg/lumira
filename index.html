@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lumira – The 7-Minute Skin Reset</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap">
+<style>
+:root{--bg:#fbf7f2;--surface:#fff;--soft:#f3ece3;--ink:#2a2233;--muted:#6a6070;--accent:#2f5d50;--rose:#b76e79;--gold:#9a7a2c;--line:#eadfd3;--cta:#2f5d50;--ctaink:#fff;--band:#2f5d50;--bandink:#fff;--shadow:0 10px 30px rgba(42,34,51,.08);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17141a;--surface:#221e27;--soft:#1d1a21;--ink:#f3ece6;--muted:#b4aab8;--accent:#8fc4b0;--rose:#e0a0aa;--gold:#d8b665;--line:#34303a;--cta:#8fc4b0;--ctaink:#10201a;--band:#26413a;--bandink:#f3ece6;--shadow:0 10px 30px rgba(0,0,0,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17141a;--surface:#221e27;--soft:#1d1a21;--ink:#f3ece6;--muted:#b4aab8;--accent:#8fc4b0;--rose:#e0a0aa;--gold:#d8b665;--line:#34303a;--cta:#8fc4b0;--ctaink:#10201a;--band:#26413a;--bandink:#f3ece6;--shadow:0 10px 30px rgba(0,0,0,.4);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:84px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Playfair Display",Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,6.5vw,3.3rem)}h2{font-size:clamp(1.6rem,4.5vw,2.35rem);text-align:center}h3{font-size:1.2rem}
+p{margin:0 0 1em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.alt{background:var(--soft)}
+.top{background:var(--band);color:var(--bandink);text-align:center;font-size:.85rem;padding:9px 14px}
+.eyebrow{color:var(--rose);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.lead{font-size:1.15rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--cta);color:var(--ctaink);padding:16px 30px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1.05rem;box-shadow:var(--shadow);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.ticks{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted);margin-top:16px}
+.hero{display:grid;gap:36px;align-items:center;padding-top:44px}
+@media(min-width:820px){.hero{grid-template-columns:1.15fr .85fr}}
+.phone{max-width:310px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:32px;padding:22px;box-shadow:var(--shadow)}
+.phone small{color:var(--muted)}
+.step{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.step:last-child{border:0}
+.chip{color:var(--accent);font-weight:700;white-space:nowrap}
+.grid{display:grid;gap:16px;margin-top:28px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.num{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--ctaink);font-weight:700;margin-bottom:10px}
+.ticklist{list-style:none;padding:0;margin:24px auto 0;max-width:640px}
+.ticklist li{padding:12px 0 12px 34px;border-bottom:1px solid var(--line);position:relative}
+.ticklist li:before{content:"✓";position:absolute;left:4px;color:var(--rose);font-weight:700}
+.center{text-align:center}
+.vs{display:grid;gap:16px;margin-top:28px}
+@media(min-width:700px){.vs{grid-template-columns:1fr 1fr}}
+.bad{border-color:var(--rose)}
+.stack{max-width:680px;margin:28px auto 0}
+.row{display:flex;justify-content:space-between;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row b{white-space:nowrap}
+.row span{color:var(--muted);font-size:.92rem;display:block}
+.total{font-size:1.1rem}
+.price{font-family:"Playfair Display",Georgia,serif;font-size:4rem;line-height:1;color:var(--accent);margin:.2em 0}
+.offer{max-width:640px;margin:0 auto;text-align:center;border:2px solid var(--accent)}
+.compare{display:grid;gap:12px;margin:24px auto 0;max-width:760px}
+@media(min-width:700px){.compare{grid-template-columns:repeat(3,1fr)}}
+.compare .card{text-align:center}
+.compare strong{display:block;font-size:1.5rem;font-family:"Playfair Display",Georgia,serif}
+.hl{border-color:var(--accent);border-width:2px}
+.guar{background:var(--band);color:var(--bandink);border-radius:22px;padding:34px 26px;text-align:center;max-width:760px;margin:0 auto}
+.guar h2{color:var(--bandink)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin:10px auto;max-width:760px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+.tl{max-width:680px;margin:28px auto 0;border-left:3px solid var(--rose);padding-left:20px}
+.tl div{margin-bottom:20px}.tl b{color:var(--accent)}
+footer{padding:36px 0;font-size:.8rem;color:var(--muted);text-align:center}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:14px;align-items:center;justify-content:center;z-index:20}
+.bar span{font-size:.9rem;color:var(--muted)}
+.bar .btn{padding:12px 22px;font-size:.98rem}
+.cc{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:40;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;max-width:760px;margin:0 auto}
+.cc p{margin:0;font-size:.88rem;flex:1 1 260px}
+.cc button{font:inherit;cursor:pointer;border:0}
+.cc .btn{padding:10px 20px;font-size:.95rem}
+.ghost{background:none;color:var(--muted);padding:10px 14px;text-decoration:underline}
+#cc[hidden]{display:none}
+</style>
+<!-- Meta Pixel (PageView + Lead). Purchase is fired by Kiwify / thank-you page. -->
+<script>
+(function(){
+var PIXEL_ID='655276762636402';
+var REQUIRE_CONSENT=true; /* UK/PECR: true = pixel loads only after "Accept". Set false to fire immediately. */
+var KEY='lumira_consent', loaded=false, leadSent=false;
+function loadPixel(){
+  if(loaded)return; loaded=true;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',PIXEL_ID);
+  fbq('track','PageView');
+}
+function get(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+function set(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href*="pay.kiwify.com"]');
+  if(a&&window.fbq&&!leadSent){leadSent=true;fbq('track','Lead',{content_name:'Lumira app',value:9.99,currency:'GBP'});}
+});
+document.addEventListener('DOMContentLoaded',function(){
+  var c=get(), box=document.getElementById('cc');
+  if(!REQUIRE_CONSENT||c==='yes'){loadPixel();return;}
+  if(c==='no')return;
+  box.hidden=false;
+  document.getElementById('cc-yes').onclick=function(){set('yes');box.hidden=true;loadPixel();};
+  document.getElementById('cc-no').onclick=function(){set('no');box.hidden=true;};
+});
+})();
+</script>
+</head>
+<body>
+<div class="top">One payment of £9.99 · No subscription · 30-day money-back guarantee</div>
+
+<header class="wrap hero">
+  <div>
+    <p class="eyebrow">For women who are done being sold the wrong thing</p>
+    <h1>Your skin hasn’t “gone off”. It’s just been given the wrong instructions.</h1>
+    <p class="lead">Lumira is a guided 7-minute daily ritual that uses things already in your kitchen cupboard to help your skin hold moisture, look fresher and feel like yours again. Pay once. Keep it for life.</p>
+    <a class="btn" href="https://pay.kiwify.com/O6HVt67">Start my 7-Minute Reset – £9.99</a>
+    <div class="ticks"><span>✓ One-off payment</span><span>✓ Nothing to cancel</span><span>✓ 30-day guarantee</span></div>
+  </div>
+  <div class="phone" aria-label="Preview of a Lumira daily ritual">
+    <small>Today’s ritual · Morning</small>
+    <h3 style="margin:.2em 0 .6em">Your 7-Minute Reset</h3>
+    <div class="step"><span>🍯 Honey &amp; oat comfort mask</span><span class="chip">3:00</span></div>
+    <div class="step"><span>🌿 Green tea refresh</span><span class="chip">1:30</span></div>
+    <div class="step"><span>✋ Upward lifting massage</span><span class="chip">2:00</span></div>
+    <div class="step"><span>🫒 Seal &amp; glow</span><span class="chip">0:30</span></div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Does any of this sound familiar?</h2>
+    <ul class="ticklist">
+      <li>You catch yourself in the mirror and think, “When did that happen?”</li>
+      <li>Your moisturiser used to work. Now it just sits on top of your skin.</li>
+      <li>Your face looks tired, even after a proper night’s sleep.</li>
+      <li>Your neck, cheeks or hands have lost their bounce and feel a bit crepey.</li>
+      <li>There’s a shelf of £40 jars at home that promised the earth.</li>
+    </ul>
+    <p class="center lead" style="margin-top:24px">If you nodded at even one, it isn’t vanity — and it isn’t your fault.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Most skincare was never made for the skin you have now</h2>
+    <div class="vs">
+      <div class="card bad"><h3>What the shelf is built for</h3><p>Skin in your twenties: steady hormones, a sturdy barrier, plenty of natural collagen. One-size-fits-all creams, rushed routines and big promises.</p></div>
+      <div class="card hl"><h3>What your skin needs now</h3><p>Gentle barrier support, comfort for dryness that feels “papery”, a little extra care for circulation and firmness — and a routine that changes with the seasons.</p></div>
+    </div>
+    <p class="center lead" style="margin-top:24px">It was never a “you” problem. It’s a mismatch. Fix the mismatch and everything gets easier.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow center">Meet Lumira</p>
+    <h2>The 7-Minute Skin Reset, in your pocket</h2>
+    <p class="center lead">No clinic. No needles. No guesswork. Just a calm, guided ritual you’ll actually keep doing.</p>
+    <div class="grid g3">
+      <div class="card"><div class="num">1</div><h3>Tell us about your skin</h3><p>A two-minute check-in: dryness, sensitivity and your main concern, whether that’s fine lines, tiredness or loss of firmness.</p></div>
+      <div class="card"><div class="num">2</div><h3>Follow your daily ritual</h3><p>Step-by-step guidance with built-in timers, using simple ingredients you already have, plus a short lifting massage.</p></div>
+      <div class="card"><div class="num">3</div><h3>Let it change with the weather</h3><p>What your skin wants in January isn’t what it wants in July. Lumira adjusts your ritual through the seasons.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>It’s all in your kitchen cupboard</h2>
+    <p class="center lead">Nothing new to buy. Just four everyday ingredients, used the right way.</p>
+    <div class="grid g2">
+      <div class="card"><h3>🍯 Raw honey</h3><p>A time-honoured favourite for comforting dry, tight-feeling skin.</p></div>
+      <div class="card"><h3>🌾 Oats</h3><p>Gentle and soothing — lovely when your skin is feeling reactive.</p></div>
+      <div class="card"><h3>🍵 Green tea</h3><p>An antioxidant-rich steep that leaves skin looking more awake.</p></div>
+      <div class="card"><h3>🫒 Olive oil</h3><p>Helps seal in moisture so your skin feels softer for longer.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What a month with Lumira can feel like</h2>
+    <div class="tl">
+      <div><b>Day 1</b><br>Seven minutes — about the length of a cuppa. You’ve started something you’ll actually finish.</div>
+      <div><b>Day 7</b><br>Skin that may feel calmer and more comfortable: less tight, less papery.</div>
+      <div><b>Day 14</b><br>A fresher, more rested look. Makeup may sit more smoothly.</div>
+      <div><b>Day 30</b><br>The one routine you haven’t given up on — because it finally works with your skin, not against it.</div>
+    </div>
+    <p class="center" style="color:var(--muted);font-size:.88rem">We won’t promise you’ll look twenty again. We will help you give your skin what it’s been missing. Individual results vary.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Everything you get today</h2>
+    <div class="stack">
+      <div class="row"><div>The 7-Minute Skin Reset<span>Personalised daily rituals — guidance comparable to a skin consultation (£45–£120 a visit)</span></div><b>£45</b></div>
+      <div class="row"><div>The Seasonal Ritual Planner<span>Your routine evolves with your skin, all year round</span></div><b>£19</b></div>
+      <div class="row"><div>The Midlife Skin Guide<span>What’s changing, why it’s happening, and what to do about it</span></div><b>£15</b></div>
+      <div class="row"><div>Every new ritual we add<span>Free updates, for life</span></div><b>Included</b></div>
+      <div class="row total"><div><strong>Total value</strong></div><b>£79+</b></div>
+    </div>
+    <div class="compare">
+      <div class="card"><p>One jar of high-street anti-ageing cream</p><strong>£35–£90</strong><p>One jar. Used up in weeks.</p></div>
+      <div class="card"><p>One Botox session</p><strong>£150+</strong><p>And again every 3–4 months.</p></div>
+      <div class="card hl"><p>Lumira</p><strong>£9.99</strong><p>Once. Yours for life.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="card offer">
+      <p class="eyebrow">Founding-member launch price</p>
+      <h2 style="margin-bottom:0">Lumira for life</h2>
+      <div class="price">£9.99</div>
+      <p>One single payment. No subscription. No hidden extras. The launch price may rise as we grow.</p>
+      <a class="btn" href="https://pay.kiwify.com/O6HVt67">Yes, I want my 7-Minute Reset</a>
+      <div class="ticks" style="justify-content:center"><span>🔒 Secure checkout</span><span>✓ 30-day guarantee</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="guar">
+      <h2>The “no awkward questions” guarantee</h2>
+      <p>Try the full 7-Minute Reset for 30 days. If you don’t feel a real difference in how your skin looks and feels, just tell us and we’ll refund every penny. No forms to fight, no explaining yourself.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Fair questions</h2>
+    <details><summary>I’ve tried everything. Why would this be different?</summary><p>Because most products are made for younger skin. Lumira is built around what midlife skin actually needs — barrier support, comfort and consistency — and it’s only seven minutes, so you’ll keep going.</p></details>
+    <details><summary>Is this a subscription?</summary><p>No. It’s one payment of £9.99. There’s nothing to cancel and nothing that renews.</p></details>
+    <details><summary>Do I need to buy special products?</summary><p>No. The rituals use everyday ingredients like honey, oats, green tea and olive oil. If you’ve got a kettle and a kitchen, you’re nearly there.</p></details>
+    <details><summary>My skin is sensitive. Is it safe?</summary><p>Lumira is gentle by design, but every skin is different. Patch test any ingredient first, and if you have a skin condition or allergies, check with your GP or pharmacist before starting.</p></details>
+    <details><summary>I haven’t got time for another routine.</summary><p>Seven minutes, guided, with timers — about as long as it takes to boil the kettle and wait for the tea to brew.</p></details>
+    <details><summary>What if it’s not for me?</summary><p>You’re covered by our 30-day guarantee. Tell us, and we’ll refund you in full.</p></details>
+    <div class="center" style="margin-top:32px"><a class="btn" href="https://pay.kiwify.com/O6HVt67">Start my 7-Minute Reset – £9.99</a></div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>Lumira is a wellness and skincare-routine app, not a medical treatment, and is not intended to diagnose, treat or cure any condition. Individual results vary.</p>
+  <p>© Lumira. All rights reserved.</p>
+</footer>
+<!-- Add real, verified customer reviews here once you have them (with permission). -->
+
+<div id="cc" class="cc" role="dialog" aria-label="Cookie consent" hidden><p>We use cookies and a Meta Pixel to measure our ads and improve your experience. Accept to allow this, or decline and carry on without it.</p><div><button id="cc-no" type="button" class="ghost">Decline</button> <button id="cc-yes" type="button" class="btn">Accept</button></div></div>
+
+<div class="bar"><span>£9.99 · one payment · yours for life</span><a class="btn" href="https://pay.kiwify.com/O6HVt67">Start now</a></div>
+</body>
+</html>
